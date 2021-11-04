@@ -1,0 +1,9 @@
+<h3>Property Bindings </h3>
+<p>{{messageBienvenue}}</p>
+<input type="text" [(ngModel)]="messageBienvenue">
+<h3>Event Binding </h3>
+<button (click)="showMessage(messageBienvenue)">Cliquez!</button>
+<button (click)="showMouseEvent($event)">Passage des données de l'Event</button>
+<h3>Attribute Binding </h3>
+<input type="text" [value]="messageBienvenue" [disabled]="disabledButton">
+<button (click)="activeInput()">Activez-moi!</button>

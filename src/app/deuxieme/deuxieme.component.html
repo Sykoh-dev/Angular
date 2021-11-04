@@ -1,0 +1,9 @@
+<h3>Pipes!</h3>
+
+<p>{{ message | uppercase }}</p>
+<p>{{maDate | date : 'dd/MMM/YYYY'}}</p>
+<p>{{montant | currency : 'EUR'}}</p>
+<p>{{montant | number : '0.2-2'}}</p>
+<p>{{ obj | json }}</p>
+<p>{{tab | slice : 5 :  8}}</p>
+<p>{{tempCelsius}} C° =>{{tempCelsius | toFarenheit}} F°</p>
